@@ -3,52 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
+    <title>Stationery Store</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
-            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #4A148C;
             color: white;
+            text-align: center;
             padding: 20px 0;
-            font-size: 1.5rem;
         }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
+        nav {
+            background-color: #6A1B9A;
+            text-align: center;
             padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
         }
-        a {
-            color: #4CAF50;
+        nav a {
+            color: white;
+            margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-color: #EDE7F6;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            margin: 0;
+            color: #4A148C;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .product h3 {
+            margin: 10px 0 5px;
+        }
+        footer {
+            background-color: #4A148C;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+
     <header>
-        🌐 Welcome to My Simple Website
+        <h1>Stationery World</h1>
+        <p>Your one-stop shop for quality stationery</p>
     </header>
 
-    <main>
-        <h1>Hello, World! 👋</h1>
-        <p>This is a simple website page created for practice.</p>
-        <p><a href="https://github.com/">Visit my GitHub</a></p>
-    </main>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to Stationery World</h1>
+        <p>Find notebooks, pens, art supplies, and more at the best prices!</p>
+    </section>
+
+    <section class="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150?text=Notebook" alt="Notebook">
+            <h3>Notebook</h3>
+            <p>$5.00</p>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150?text=Pen+Set" alt="Pen Set">
+            <h3>Pen Set</h3>
+            <p>$8.00</p>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150?text=Colors" alt="Colors">
+            <h3>Colors</h3>
+            <p>$12.00</p>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150?text=Sketchbook" alt="Sketchbook">
+            <h3>Sketchbook</h3>
+            <p>$10.00</p>
+        </div>
+    </section>
 
     <footer>
-        &copy; 2025 My Simple Website
+        <p>&copy; 2025 Stationery World. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
